@@ -46,8 +46,8 @@ const scrollToAbout = () => {
 
         <div class="relative flex-1 flex justify-center mb-8 md:mb-0">
           <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary relative z-10">
-            <NuxtImg
-              src="https://github.com/emirsassan.png"
+            <img
+              src="/pfp.jpeg"
               alt="Profile"
               class="w-full h-full object-cover select-none"
             />
