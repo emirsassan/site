@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'My Website',
     description: "My portfolio, most likely the website you're on right now!",
-    image: '/project2.jpg',
+    image: 'https://i.imgur.com/feHIvoo.png',
     tags: ['Nuxt', 'TypeScript', 'TailwindCSS'],
     links: {
       github: 'https://github.com/emirsassan/site',
