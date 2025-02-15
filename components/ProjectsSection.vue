@@ -19,6 +19,25 @@ const projects = [
       live: 'https://emir.buzz'
     }
   },
+  {
+    title: 'Indx',
+    description: "Mod database for weave modding framework",
+    image: 'https://i.imgur.com/fqgpJub.png',
+    tags: ['Next.js', 'TypeScript', 'TailwindCSS'],
+    links: {
+      github: 'https://github.com/emirsassan/indx',
+      live: 'https://indx.emir.buzz'
+    }
+  },
+  {
+    title: 'Royal',
+    description: "A rust library for parsing Persona 5 Royal's .msg files",
+    image: 'https://i.imgur.com/fAFg6vM.png',
+    tags: ['Rust'],
+    links: {
+      github: 'https://github.com/emirsassan/royal'
+    }
+  }
 ];
 </script>
 

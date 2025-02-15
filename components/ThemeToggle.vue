@@ -37,11 +37,12 @@ const updateStyles = (css: string, name: string) => {
 };
 
 // i dont know why is still not included in the types
-declare global {
-  interface Document {
-    startViewTransition?: (callback: () => void) => void;
-  }
-}
+// edit 15.02.2025 its now included in the types
+// declare global {
+//   interface Document {
+//     startViewTransition?: (callback: () => void) => void;
+//   }
+// }
 
 const toggleTheme = () => {
   const animation = createAnimation(props.variant, props.start, props.url);
