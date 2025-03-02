@@ -19,6 +19,12 @@ const scrollToAbout = () => {
     aboutSection.scrollIntoView({ behavior: "smooth" });
   }
 };
+
+const isModal = ref(false);
+
+const handleStuff = () => {
+  isModal.value = false;
+};
 </script>
 
 <template>
@@ -33,10 +39,13 @@ const scrollToAbout = () => {
           >
             Hello everyone 👋
           </h1>
-          <p class="font-poppins text-text/80 dark:text-dark-text/80 text-lg mb-8">
+          <p
+            class="font-poppins text-text/80 dark:text-dark-text/80 text-lg mb-8"
+          >
             I'm a full-stack developer from Turkey
           </p>
-          <a
+          <div class="flex gap-2">
+            <a
             href="https://github.com/emirsassan"
             target="_blank"
             class="inline-flex items-center gap-2 bg-text text-background dark:bg-dark-accent dark:text-dark-text px-6 py-3 rounded-lg hover:bg-primary hover:dark:bg-dark-accent/55 transition-colors duration-200"
@@ -49,6 +58,38 @@ const scrollToAbout = () => {
             </svg>
             Check my Github
           </a>
+
+          <!-- <button
+            @click="isModal = true"
+            class="inline-flex items-center gap-2 bg-text text-background dark:bg-dark-accent dark:text-dark-text px-6 py-3 rounded-lg hover:bg-primary hover:dark:bg-dark-accent/55 transition-colors duration-200"
+          >
+            Sign my site
+          </button> -->
+          </div>
+
+          <Modal
+            :is-open="isModal"
+            title="Sign my website!"
+            size="lg"
+            @close="isModal = false"
+          >
+            <DrawingArea />
+
+            <template #footer>
+              <button
+                @click="isModal = false"
+                class="px-4 py-2 text-text/80 hover:text-text dark:text-dark-text/80 dark:hover:text-dark-text"
+              >
+                Cancel
+              </button>
+              <button
+                @click="handleStuff"
+                class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 dark:bg-dark-accent dark:hover:bg-dark-accent/90"
+              >
+                Confirm
+              </button>
+            </template>
+          </Modal>
         </div>
 
         <div class="relative flex-1 flex justify-center mb-8 md:mb-0">

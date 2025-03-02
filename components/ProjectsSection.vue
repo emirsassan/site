@@ -37,6 +37,15 @@ const projects = [
     links: {
       github: 'https://github.com/emirsassan/royal'
     }
+  },
+  {
+    title: 'AAPI',
+    description: "An api for who wants to access a large database of anime images",
+    image: 'https://i.imgur.com/FheDL3z.png',
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'TailwindCSS'],
+    links: {
+      live: 'https://aapi.emir.buzz'
+    }
   }
 ];
 </script>
