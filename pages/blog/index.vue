@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { data: posts } = await useAsyncData('posts', () => 
-  queryContent('/').find()
+  queryContent('/').sort({
+    date: -1
+  }).find()
 )
 
 useSeoMeta({
