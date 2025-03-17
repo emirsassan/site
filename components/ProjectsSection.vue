@@ -46,6 +46,15 @@ const projects = [
     links: {
       live: 'https://aapi.emir.buzz'
     }
+  },
+  {
+    title: 'Banger',
+    description: "A bot that brings duckduckgo's bangs feature to discord",
+    image: 'https://i.imgur.com/WEklf3o.png',
+    tags: ['TypeScript', 'Discord.js'],
+    links: {
+      live: 'https://discord.com/oauth2/authorize?client_id=1345736410765983754&permissions=11264&integration_type=0&scope=bot'
+    }
   }
 ];
 </script>
