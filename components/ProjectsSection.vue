@@ -55,6 +55,12 @@ const projects = [
     links: {
       live: 'https://discord.com/oauth2/authorize?client_id=1345736410765983754&permissions=11264&integration_type=0&scope=bot'
     }
+  },
+  {
+    title: 'Lupin',
+    description: "A game engine made with web technologies",
+    image: 'https://i.imgur.com/dXatlu2.png',
+    tags: ["Tauri", "TypeScript", "Threejs"]
   }
 ];
 </script>
