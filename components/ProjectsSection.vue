@@ -60,7 +60,10 @@ const projects = [
     title: 'Lupin',
     description: "A game engine made with web technologies",
     image: 'https://i.imgur.com/dXatlu2.png',
-    tags: ["Tauri", "TypeScript", "Threejs"]
+    tags: ["Tauri", "TypeScript", "Threejs"],
+    links: {
+      live: "https://emir.buzz"
+    }
   }
 ];
 </script>
