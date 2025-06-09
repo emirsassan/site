@@ -1,7 +1,7 @@
 <script setup>
 const skills = [
   { category: 'Frontend', items: ['Vue.js', 'Nuxt', 'React', 'NextJS', 'TailwindCSS', 'TypeScript'] },
-  { category: 'Backend', items: ['Node.js', 'Bun', 'Express', 'Elysiajs', 'Prisma', 'MongoDB', 'PostgreSQL'] },
+  { category: 'Backend', items: ['Node.js', 'Bun', 'Rust', 'Express', 'Elysiajs', 'Prisma', 'MongoDB', 'PostgreSQL'] },
   { category: 'Tools', items: ['Git', 'Docker', 'VS Code', 'Figma'] },
 ];
 </script>
